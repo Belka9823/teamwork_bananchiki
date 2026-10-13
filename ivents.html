@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банановые события 🍌</title>
+    <link rel="stylesheet" href="ivents.css">
+</head>
+<body>
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-link">🏠 Главная</a>
+        <a href="games.html" class="nav-link">🍌 Игры</a>
+        <a href="facts.html" class="nav-link">📖 Факты</a>
+        <a href="otzivi.html" class="nav-link">💬 Отзывы</a>
+        <a href="questions.html" class="nav-link">❓ Вопросы</a>
+        <a href="ivents.html" class="nav-link active">🎉 События</a>
+    </div>
+</nav>
+
+<div class="page-wrapper">
+    <header>
+        <h1><span>🎉</span>Банановые события<span>🍌</span></h1>
+        <div class="subhead">Самые жёлтые праздники в году</div>
+    </header>
+
+    <div class="events-intro">
+        <p>Добро пожаловать в календарь самых важных банановых событий! Здесь вы найдёте всё: от Дня банановой кожуры до торжественной Банановой свадьбы. Отмечайте вместе с нами — бананы ждут!</p>
+    </div>
+
+    <!-- Фильтры -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Все события</button>
+        <button class="filter-btn" data-filter="fun">🎈 Весёлые</button>
+        <button class="filter-btn" data-filter="food">🍽️ Вкусные</button>
+        <button class="filter-btn" data-filter="official">📅 Официальные</button>
+    </div>
+
+    <!-- Сетка событий -->
+    <div class="events-grid" id="eventsGrid">
+        <!-- События рендерятся через JS -->
+    </div>
+
+    <footer>
+        🍌 Все события шуточные, но бананы — настоящие! 🍌
+    </footer>
+</div>
+
+<script src="ivents.js"></script>
+</body>
+</html>
