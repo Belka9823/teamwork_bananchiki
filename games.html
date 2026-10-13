@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банановые игры 🍌</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-link">🏠 Главная</a>
+        <a href="games.html" class="nav-link active">🍌 Игры</a>
+        <a href="facts.html" class="nav-link">📖 Факты</a>
+        <a href="otzivi.html" class="nav-link">💬 Отзывы</a>
+        <a href="questions.html" class="nav-link">❓ Вопросы</a>
+        <a href="ivents.html" class="nav-link">🎉 События</a>
+    </div>
+</nav>
+
+<div class="page-wrapper">
+    <header>
+        <h1><span>🍌</span>Банановые игры<span>🍌</span></h1>
+        <div class="subhead">Весёлые забавы в жёлто-белых тонах</div>
+    </header>
+
+    <div class="games-grid">
+        <!-- Игра 1: Кликер по банану -->
+        <div class="game-card">
+            <div class="game-title">🍌 Банан-кликер</div>
+            <div class="game-area">
+                <div id="bananaClicker" title="Кликни по банану!">🍌</div>
+                <div class="score-box">
+                    <span>🍌</span> <span id="clickerScore">0</span>
+                </div>
+                <div class="click-hint">Жми на банан — собирай урожай!</div>
+            </div>
+            <div class="controls">
+                <button id="resetClicker">Сбросить</button>
+            </div>
+        </div>
+
+        <!-- Игра 2: Убегающий банан -->
+        <div class="game-card">
+            <div class="game-title">🏃‍♂️ Убегающий банан</div>
+            <div class="game-area">
+                <div class="timer-display" id="runnerTimer">⏱️ 20 сек</div>
+                <div class="playground" id="runnerPlayground">
+                    <div class="runner-banana" id="runnerBanana" style="left: 45%; top: 40%;">🍌</div>
+                </div>
+                <div class="score-box" style="margin-top: 12px;">
+                    <span>🎯</span> Поймано: <span id="runnerScore">0</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="startRunner">Новая игра</button>
+            </div>
+        </div>
+
+        <!-- Игра 3: Банановая память -->
+        <div class="game-card">
+            <div class="game-title">🧠 Банановая память</div>
+            <div class="game-area">
+                <div class="memory-grid" id="memoryGrid"></div>
+                <div class="memory-status" id="memoryStatus">Найди все пары бананов!</div>
+                <div class="score-box" style="margin-top: 12px;">
+                    <span>✅</span> Пары: <span id="memoryPairs">0</span> / 6
+                </div>
+            </div>
+            <div class="controls">
+                <button id="resetMemory">Перемешать</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        🍌 Все игры созданы для поднятия настроения. Бананы одобряют! 🍌
+    </footer>
+</div>
+
+<script src="games.js"></script>
+</body>
+</html>
