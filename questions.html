@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шуточные вопросы про бананы 🍌</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-link">🏠 Главная</a>
+        <a href="games.html" class="nav-link">🍌 Игры</a>
+        <a href="facts.html" class="nav-link">📖 Факты</a>
+        <a href="otzivi.html" class="nav-link">💬 Отзывы</a>
+        <a href="questions.html" class="nav-link active">❓ Вопросы</a>
+        <a href="ivents.html" class="nav-link">🎉 События</a>
+    </div>
+</nav>
+
+<div class="page-wrapper">
+    <header>
+        <h1><span>❓</span>Шуточные вопросы<span>🍌</span></h1>
+        <div class="subhead">Весёлые вопросы и ответы про бананы</div>
+    </header>
+
+    <div class="quiz-container">
+        <div class="quiz-card" id="quizCard">
+            <div class="quiz-progress">
+                Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">10</span>
+            </div>
+
+            <div class="quiz-question" id="questionText">
+                Загрузка вопроса...
+            </div>
+
+            <div class="quiz-answers" id="answersContainer">
+                <!-- Ответы генерируются через JS -->
+            </div>
+
+            <div class="quiz-result" id="quizResult"></div>
+        </div>
+
+        <div class="quiz-controls">
+            <button id="nextBtn" disabled>Следующий вопрос →</button>
+            <button id="restartBtn">🔄 Начать заново</button>
+        </div>
+
+        <div class="quiz-score">
+            🏆 Правильных ответов: <span id="scoreValue">0</span>
+        </div>
+    </div>
+
+    <footer>
+        🍌 Все вопросы шуточные. Бананы одобряют! 🍌
+    </footer>
+</div>
+
+<script src="questions.js"></script>
+</body>
+</html>
