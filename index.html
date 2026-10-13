@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Банановый уголок — приветствие, забавные факты и банановое настроение.">
+  <title>Банановый уголок 🍌</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="На главную">🍌 Банано-сайт</a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Главная навигация">
+         <div class="nav-inner">
+        <a href="index.html" class="nav-link">🏠 Главная</a>
+        <a href="games.html" class="nav-link active">🍌 Игры</a>
+        <a href="facts.html" class="nav-link">📖 Факты</a>
+        <a href="reviews.html" class="nav-link">💬 Отзывы</a>
+        <a href="questions.html" class="nav-link">❓ Вопросы</a>
+        <a href="ivents.html" class="nav-link">🎉 События</a>
+    </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero glass">
+      <p class="eyebrow">🍌 Добро пожаловать в банановую вселенную!</p>
+      <h1>Бананы — это <span>серьёзно.</span><br>Ну, почти.</h1>
+      <p class="hero-text">Место, где бананы получают заслуженное внимание, факты становятся вкуснее, а настроение — немного желтее.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="facts.html">Узнать факты →</a>
+        <button class="button button-secondary" id="banana-joke" type="button">Поднять банан-настроение 🍌</button>
+      </div>
+      <p class="joke-output" id="joke-output" aria-live="polite"></p>
+    </section>
+
+    <section class="welcome-grid">
+      <article class="info-card glass">
+        <div class="big-emoji" aria-hidden="true">🍌</div>
+        <h2>Почему бананы?</h2>
+        <p>Они удобные, сладкие, питательные и отлично смотрятся на фотографиях. У них богатая и интересная история!</p>
+        <a class="text-link" href="facts.html">Читать интересное →</a>
+      </article>
+      <article class="info-card glass">
+        <div class="big-emoji" aria-hidden="true">💬</div>
+        <h2>Что говорят фанаты?</h2>
+        <p>Почитайте отзывы других бананоедов или оставьте своё мнение о нашем желтом уголке.</p>
+        <a class="text-link" href="reviews.html">Перейти к отзывам →</a>
+      </article>
+    </section>
+
+    <section class="banner glass">
+      <div>
+        <p class="eyebrow">Главное правило сайта</p>
+        <h2>Не грусти. Съешь банан.</h2>
+        <p>А если банана нет — хотя бы посмотри на него.</p>
+      </div>
+      <div class="banner-banana" aria-hidden="true">🍌</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span class="current-year"></span> Банано-сайт</span>
+    <span>Сделано с любовью и калием 💛</span>
+  </footer>
+</body>
+</html>
