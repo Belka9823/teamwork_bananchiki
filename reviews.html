@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Отзывы бананофанатов.">
+  <title>Отзывы — Банано-сайт 🍌</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="reviews-page">
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="На главную">🍌 Банано-сайт</a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Главная навигация">
+          <div class="nav-inner">
+        <a href="index.html" class="nav-link">🏠 Главная</a>
+        <a href="games.html" class="nav-link active">🍌 Игры</a>
+        <a href="facts.html" class="nav-link">📖 Факты</a>
+        <a href="reviews.html" class="nav-link">💬 Отзывы</a>
+        <a href="questions.html" class="nav-link">❓ Вопросы</a>
+        <a href="ivents.html" class="nav-link">🎉 События</a>
+    </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-heading glass">
+      <p class="eyebrow">💬 Мнения наших посетителей</p>
+      <h1>Отзывы <span>бананоедов</span></h1>
+      <p>Узнайте, что думают о бананах знаменитости и обычные фанаты, или оставьте своё мнение!</p>
+    </section>
+
+    <section class="reviews-section glass">
+      <div id="reviews-list" class="reviews-grid">
+        <article class="review-card">
+          <div class="review-header">
+            <strong>Гарри Поттер</strong>
+            <button class="like-btn" type="button">❤️ <span class="like-count">15</span></button>
+          </div>
+          <p>«Я думал, что волшебная палочка — это круто. Но потом я попробовал банан. Теперь жду уроков банановедения в Хогвартсе!»</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <strong>Дарт Вейдер</strong>
+            <button class="like-btn" type="button">❤️ <span class="like-count">29</span></button>
+          </div>
+          <p>«Я чувствую силу... Силу банана. Присоединяйся к темной стороне, у нас есть бананы!»</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <strong>Кот Том</strong>
+            <button class="like-btn" type="button">❤️ <span class="like-count">8</span></button>
+          </div>
+          <p>«Мяу. Я пытался съесть банан, но он оказался хитрее. Теперь я просто смотрю на него с уважением.»</p>
+        </article>
+      </div>
+
+      <div class="add-review-block">
+        <h2>Оставить свой отзыв</h2>
+        <form id="review-form">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" required placeholder="Например, Любитель бананов">
+          </div>
+          <div class="form-group">
+            <label for="text">Ваш отзыв:</label>
+            <textarea id="text" rows="4" required placeholder="Напишите, как вы любите бананы..."></textarea>
+          </div>
+          <button type="submit" class="button button-primary">Отправить отзыв 🍌</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span class="current-year"></span> Банано-сайт</span>
+    <span>Каждый отзыв делает банан слаще 💛</span>
+  </footer>
+</body>
+</html>
